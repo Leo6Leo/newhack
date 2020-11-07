@@ -82,7 +82,7 @@ if($haha == ""){
         }  
         mysql_select_db("xdm447914479_db",$con);  
 			mysql_query("set names 'utf8'");
-			  mysql_query("insert into vocabulary (word,def) values('{$wordname}','{$haha}')") or die("后台记录存入失败".mysql_error()) ; 
+			  mysql_query("insert into vocabulary (word,def) values('{$wordname}','{$haha}')") or die("fail to save in the background".mysql_error()) ; 
 
 		?>
 
@@ -391,7 +391,7 @@ if($haha == ""){
                 </div>
                 <div class="form-group">
                     <div class="col-md-12">
-                        <input type="submit" onclick="showMask();" value="提交" class="btn btn-danger" />
+                        <input type="submit" onclick="showMask();" value="submit" class="btn btn-danger" />
                         <br /><br />
                         <a href="index.html">Exit</a>
                         <div id="alert" style="display:none; text-align:center; "><span class="ld ld-ring ld-spin" style="font-size:300%;"></span></div>
