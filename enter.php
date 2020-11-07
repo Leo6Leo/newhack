@@ -40,7 +40,7 @@
     ?>  
     <script type="text/javascript">  
         alert("Wrong password or e-mail.");  
-        window.location.href="../login-1.html";  
+        window.location.href="login-1.html";  
     </script>  
     <?php   
             }  
@@ -54,7 +54,7 @@
 				mysql_query("insert into 6boxeslog (username,method,behave,ip) values('{$username}','{$method}','{$behave}','{$ip}')") or die("Connection failed".mysql_error()) ;  
     ?>  
     <script type="text/javascript">  
-        window.location.href="../vocab.html";  
+        window.location.href="vocab.html";  
     </script>  
     <?php   
             }  
