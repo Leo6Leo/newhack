@@ -1,0 +1,211 @@
+﻿
+
+
+<br /><br />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+    <style>
+
+        /* 一、样式基本初始化 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+            height: 105.5%;
+            background-color: #ccc9ca;
+        }
+
+        ul,
+        li {
+            list-style: none;
+            text-align: center;
+        }
+
+        /* 导航栏因为是基于屏幕定位，所以padding要进行单独的计算。env在IOS 11.2中新增的，constant在IOS 11.2 已经被废弃，但是我们要做兼容，所以都要用上。 */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            /* 因为header导航栏是基于屏幕进行定位，所以要做单独的padding挤压处理 */
+            padding-right: constant(safe-area-inset-right);
+            padding-left: constant(safe-area-inset-left);
+            padding-right: env(safe-area-inset-right);
+            padding-left: env(safe-area-inset-left);
+            overflow: scroll;
+            background-color: #2889e8;
+        }
+
+            header ul {
+                display: block;
+                width: 200%;
+                background-color: #2889e8;
+                box-sizing: border-box;
+                line-height: 32px;
+                height: 32px;
+                padding: 0 10px;
+            }
+
+                header ul li {
+                    float: left;
+                    padding: 0px 8px;
+                    color: #666;
+                    font-weight: 500;
+                }
+
+                header ul:after {
+                    display: table;
+                    height: 0;
+                    clear: both;
+                    height: 0;
+                    content: "";
+                }
+
+        .show {
+            margin-top: 36px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0px 10px 10px;
+        }
+
+        .active {
+            color: #2889e8;
+            background-color: #ffffff;
+        }
+
+
+        .show li {
+            padding: 10px 0;
+            background-color: #fff;
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+        /* body 在横屏底下和竖屏底下一定要做好定位，不然*/
+        /* 竖屏底下的查询 */
+        @media screen and (orientation: portrait) {
+            body {
+                /* 防止页面被刘海遮住 */
+                padding-top: constant(safe-area-inset-top);
+            }
+        }
+        /* 横屏底下的查询 */
+        @media screen and (orientation: landscape) {
+            body {
+                /* IOS 11支持*/
+                padding-right: constant(safe-area-inset-right);
+                padding-left: constant(safe-area-inset-left);
+                /*IOS 11.2版本版本支持*/
+                padding-right: env(safe-area-inset-right);
+                padding-left: env(safe-area-inset-left);
+            }
+        }
+    </style>
+</head>
+<div class="pages">
+    <div data-page="register" class="page theme-white layout-dark login-page">
+        <div class="page-content bg-home">
+            <div class="overlay"></div>
+            <form action="../reg.php" method="post">
+                <div class="content-block">
+                    <div class="text-center text-large">注册 Sign Up</div>
+                    <div class="list-block inputs-list">
+                        <ul>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"></div>
+                                        <div class="item-input item-input-field">
+                                            <input class="" placeholder="邮箱(务必准确)" type="email" required name="mailnum">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"></div>
+                                        <div class="item-input item-input-field">
+                                            <input class="" placeholder="英文名" type="text" required name="engname">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"></div>
+                                        <div class="item-input item-input-field">
+                                            <input class="" placeholder="出生年份" type="text" name="bornyear">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"></div>
+                                        <div class="item-input item-input-field">
+                                            <input class="" placeholder="职业" type="text" name="job">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"></div>
+                                        <div class="item-input item-input-field">
+                                            <input class="" placeholder="手机号(选填)" type="text" name="phonenum">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"></div>
+                                        <div class="item-input item-input-field">
+
+                                            <input class="" placeholder="学习英语目的(出国留学or学习英语or商务)" required type="text" name="plan">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"></div>
+                                        <div class="item-input item-input-field">
+                                            <input class="" placeholder="设置一个密码，不要是常用或重要的密码" required name="password" type="password">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <p class="buttons-row">
+                        <button type="submit" class="no-border-raduis button button-fill color-red">提交信息Submit</button>
+                        <div class="close"><a href="index.html" class="back" data-force="true"><img src="img/back.png" alt="close"></a></div>
+                    </p>
+            </form>
+            <div class="text-center help-input">点击提交即默认您同意《六个隐私协议》及《用户使用协议》 <a href="privacy.html" class="text-underline">点我查看上述文件</a></div><br />
+            <div class="text-center help-input">当您注册成功后，系统会为您随机分配学号，作为您登录的唯一凭证</div><br />
+            <div class="text-center help-input">已经有“六个账号”啦？ <a href="login.html" class="text-underline">登录 Login</a></div><br />
+        </div>
+        </div>
+    </div>
+</div>

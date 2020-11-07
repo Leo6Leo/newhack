@@ -1,0 +1,211 @@
+﻿<!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+
+<br /><br />
+<meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+    <style>
+
+        /* 一、样式基本初始化 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+            height: 105.5%;
+            background-color: #ccc9ca;
+        }
+
+        ul,
+        li {
+            list-style: none;
+            text-align: center;
+        }
+
+        /* 导航栏因为是基于屏幕定位，所以padding要进行单独的计算。env在IOS 11.2中新增的，constant在IOS 11.2 已经被废弃，但是我们要做兼容，所以都要用上。 */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            /* 因为header导航栏是基于屏幕进行定位，所以要做单独的padding挤压处理 */
+            padding-right: constant(safe-area-inset-right);
+            padding-left: constant(safe-area-inset-left);
+            padding-right: env(safe-area-inset-right);
+            padding-left: env(safe-area-inset-left);
+            overflow: scroll;
+            background-color: #2889e8;
+        }
+
+            header ul {
+                display: block;
+                width: 200%;
+                background-color: #2889e8;
+                box-sizing: border-box;
+                line-height: 32px;
+                height: 32px;
+                padding: 0 10px;
+            }
+
+                header ul li {
+                    float: left;
+                    padding: 0px 8px;
+                    color: #666;
+                    font-weight: 500;
+                }
+
+                header ul:after {
+                    display: table;
+                    height: 0;
+                    clear: both;
+                    height: 0;
+                    content: "";
+                }
+
+        .show {
+            margin-top: 36px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0px 10px 10px;
+        }
+
+        .active {
+            color: #2889e8;
+            background-color: #ffffff;
+        }
+
+
+        .show li {
+            padding: 10px 0;
+            background-color: #fff;
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+        /* body 在横屏底下和竖屏底下一定要做好定位，不然*/
+        /* 竖屏底下的查询 */
+        @media screen and (orientation: portrait) {
+            body {
+                /* 防止页面被刘海遮住 */
+                padding-top: constant(safe-area-inset-top);
+            }
+        }
+        /* 横屏底下的查询 */
+        @media screen and (orientation: landscape) {
+            body {
+                /* IOS 11支持*/
+                padding-right: constant(safe-area-inset-right);
+                padding-left: constant(safe-area-inset-left);
+                /*IOS 11.2版本版本支持*/
+                padding-right: env(safe-area-inset-right);
+                padding-left: env(safe-area-inset-left);
+            }
+        }
+    </style>
+</head>
+<div class="pages" data-swipe="false">
+    <!-- Page, "data-page" contains page name -->
+    <div data-page="login" class="page theme-white layout-dark login-page">
+        <!-- Scrollable page content -->
+        <div class="page-content bg-home">
+            <div class="overlay"></div>
+
+            <div class="content-block">
+                <div class="text-center text-large">帮助中心 Help</div>
+                <form action="../enter.php" method="post">
+                    <div class="list-block inputs-list">
+                        <ul>
+                            <li>
+
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"></div>
+                                        <div class="item-input item-input-field">
+                                            <h5>如果在您登录时一直被退回首页，则代表您的用户名密码输入有误或账号被封禁，请您知晓</h5><br /><br />
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"></div>
+                                        <div class="item-input item-input-field">
+                                            <h5>六个单词本是一款致力于帮助想要认真学习英语的同学的软件，你可以在看英语文献时使用六个单词本查词语的中文意思，并且这个单词会被记录下来，放进单词本</h5><br /><br />
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"></div>
+                                        <div class="item-input item-input-field">
+                                            <h5>我会记录下你查询每个单词的次数，帮助你更好的分析到底是哪个单词那么难缠</h5><br /><br />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"></div>
+                                        <div class="item-input item-input-field">
+                                            <h5>单词本支持导出，推荐你使用quizlet.com，这是一个很好的记单词的网站，你可以把从六个单词本导出的单词导入quizlet，一键创建学习集，从此快人一步，快乐学习</h5><br /><br />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"></div>
+                                        <div class="item-input item-input-field">
+                                            <h5>本人高中学生，技术有限，欢迎大佬们帮忙一起让这个单词本越来越好，请黑客们手下留情，放过小弟</h5><br /><br />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"></div>
+                                        <div class="item-input item-input-field">
+                                            <h5>感谢网易有道词典词库youdao.com</h5><br /><br />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-content">
+                                    <div class="item-inner">
+                                        <div class="item-title label"></div>
+                                        <div class="item-input item-input-field">
+                                            <h5>六个单词本永久免费，造福我大中国的学子</h5><br /><br />
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                    <p class="buttons-row">
+                        <a target="_blank" href="index.html" class="no-border-raduis button button-fill color-red">返回首页 Index</a>
+
+                        <div class="close"><a href="index.html" class="back" data-force="true"><img src="img/back.png" alt="close"></a></div>
+                    </p>
+                    <div class="text-center help-input">还没有六个账号吗？ <a href="register.html" class="text-underline">注册Sign up</a></div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

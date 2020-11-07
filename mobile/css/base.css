@@ -1,0 +1,520 @@
+img {
+    max-width: 100%;
+}
+
+/* Typography
+================================================== */
+
+
+/* Titles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 200;
+    line-height: 1.25;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+h5 {
+    font-size: 15.5px;
+    line-height: 1.5;
+}
+
+h6 {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.title-huge {
+    font-size: 80px;
+    font-weight: 100;
+    line-height: 1.1;
+}
+
+.title-large {
+    font-size: 60px;
+    font-weight: 100;
+    line-height: 1.2;
+}
+
+.title-medium {
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+.title-small {
+    font-size: 11.5px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* Buttons
+================================================== */
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: "Montserrat";
+    outline: none;
+}
+
+.btn {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Montserrat";
+    font-size: 9.5px;
+    font-weight: 400;
+    height: 36px;
+    letter-spacing: 0.2em;
+    line-height: 15px;
+    outline: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+	border-radius: 50px;
+	text-align: center;
+}
+
+.btn.full-btn {
+	width: 100%;
+}
+
+.btn.half-btn {
+	width: 48%;
+}
+
+.btn.primary {
+  background-image: -moz-linear-gradient( 95deg, rgb(14,73,193) 4%, rgb(13,172,255) 100%);
+  background-image: -webkit-linear-gradient( 95deg, rgb(14,73,193) 4%, rgb(13,172,255) 100%);
+  background-image: -ms-linear-gradient( 95deg, rgb(14,73,193) 4%, rgb(13,172,255) 100%);
+  color: #FFFFFF;
+}
+
+.btn.red {
+  background-image: -moz-linear-gradient( 95deg, rgb(193,14,174) 4%, rgb(255,13,229) 100%);
+  background-image: -webkit-linear-gradient( 95deg, rgb(193,14,174) 4%, rgb(255,13,229) 100%);
+  background-image: -ms-linear-gradient( 95deg, rgb(193,14,174) 4%, rgb(255,13,229) 100%);
+  color: #FFFFFF;
+}
+
+.btn.transparent {
+  color: #FFFFFF;
+}
+
+.btn.facebook {
+  background-image: -moz-linear-gradient( 95deg, rgb(59,89,152) 4%, rgb(80,120,204) 100%);
+  background-image: -webkit-linear-gradient( 95deg, rgb(59,89,152) 4%, rgb(80,120,204) 100%);
+  background-image: -ms-linear-gradient( 95deg, rgb(59,89,152) 4%, rgb(80,120,204) 100%);
+  color: #FFFFFF;
+}
+
+.btn.gmail {
+	background-image: -moz-linear-gradient( 95deg, rgb(221,75,57) 4%, rgb(246,103,86) 100%);
+  background-image: -webkit-linear-gradient( 95deg, rgb(221,75,57) 4%, rgb(246,103,86) 100%);
+  background-image: -ms-linear-gradient( 95deg, rgb(221,75,57) 4%, rgb(246,103,86) 100%);
+  color: #FFFFFF;
+}
+
+.buttons-row .btn {
+    border-radius: 0;
+    border-left-width: 0;
+    width: 100%;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+}
+
+.buttons-row .btn:first-child {
+    border-radius: 27px 0 0 27px;
+}
+
+.buttons-row .btn:last-child {
+    border-radius: 0 27px 27px 0;
+}
+
+
+
+/* Code
+================================================== */
+
+code {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    font-size: 90%;
+    margin: 0 .2rem;
+    padding: .2rem .5rem;
+    white-space: nowrap;
+}
+
+pre > code {
+    display: block;
+    padding: 1rem 1.5rem;
+    white-space: pre;
+}
+
+/* Tables
+================================================== */
+
+th,
+td {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
+
+/* Spacing
+================================================== */
+
+
+/* Margins */
+
+.margin-bottom-10 {
+    margin-bottom: 1rem !important;
+}
+
+.margin-bottom-15 {
+    margin-bottom: 1.5rem !important;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 2rem !important;
+}
+
+.margin-bottom-25 {
+    margin-bottom: 2.5rem !important;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 3rem !important;
+}
+
+.margin-bottom-35 {
+    margin-bottom: 3.5rem !important;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 4rem !important;
+}
+
+.margin-bottom-45 {
+    margin-bottom: 4.5rem !important;
+}
+
+.margin-bottom-50 {
+    margin-bottom: 5rem !important;
+}
+
+.margin-bottom-60 {
+    margin-bottom: 6rem !important;
+}
+
+.margin-bottom-65 {
+    margin-bottom: 6.5rem !important;
+}
+
+.margin-bottom-70 {
+    margin-bottom: 7rem !important;
+}
+
+.margin-bottom-75 {
+    margin-bottom: 7.5rem !important;
+}
+
+.margin-bottom-80 {
+    margin-bottom: 8rem !important;
+}
+
+.margin-bottom-100 {
+    margin-bottom: 10rem !important;
+}
+
+.margin-top-5 {
+    margin-top: 0.5rem !important;
+}
+
+.margin-top-10 {
+    margin-top: 1rem !important;
+}
+
+.margin-top-15 {
+    margin-top: 1.5rem !important;
+}
+
+.margin-top-20 {
+    margin-top: 2rem !important;
+}
+
+.margin-top-25 {
+    margin-top: 2.5rem !important;
+}
+
+.margin-top-30 {
+    margin-top: 3rem !important;
+}
+
+.margin-top-35 {
+    margin-top: 3.5rem !important;
+}
+
+.margin-top-40 {
+    margin-top: 4rem !important;
+}
+
+.margin-top-45 {
+    margin-top: 4.5rem !important;
+}
+
+.margin-top-50 {
+    margin-top: 5rem !important;
+}
+
+.margin-top-60 {
+    margin-top: 6rem !important;
+}
+
+/* Offsets */
+
+.offset-100 {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.offset-50 {
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.offset-bottom-0 {
+    padding-bottom: 0px;
+}
+
+.offset-bottom-15 {
+    padding-bottom: 15px;
+}
+
+.offset-bottom-35 {
+    padding-bottom: 35px;
+}
+
+.offset-bottom-50 {
+    padding-bottom: 50px;
+}
+
+.offset-bottom-75 {
+    padding-bottom: 75px;
+}
+
+
+/* Blockquote
+================================================== */
+
+blockquote {
+    font-family: "Montserrat";
+    margin: 0px;
+}
+
+
+/* Utilities
+================================================== */
+.img-left {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 2px;
+	display: block;
+}
+
+.img-right {
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 2px;
+	display: block;
+}
+
+.no-border {
+	border: none!important;
+}
+
+.help-input {
+	font-size: 13px;
+}
+
+.icon-white {
+	color:#FFF;
+}
+
+.no-border-raduis {
+	border-radius: 0px!important;
+}
+
+.no-border.list-block ul::before {
+	background: #FFF!important;
+}
+
+.vertical-bottom {
+    vertical-align: bottom;
+}
+
+.vertical-top {
+    vertical-align: top;
+}
+
+.vertical-center {
+    vertical-align: middle;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left!important;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.text-underline {
+	text-decoration: underline;
+}
+
+/* Selection */
+
+.u-unselectable {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+
+/* Display */
+
+.display-block {
+    display: block;
+}
+
+.display-table {
+    display: table;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+
+/* Text formating */
+
+.text-normal {
+    font-style: normal!important;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-large {
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.text-small {
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.text-thiny {
+    font-size: 12px!important;
+}
+
+.text-extrat-bold {
+    font-weight: 700 !important;
+}
+
+.text-bold {
+    font-weight: 600 !important;
+}
+
+.text-medium {
+    font-weight: 500 !important;
+}
+
+.text-regular {
+    font-weight: 400 !important;
+}
+
+.text-light {
+    font-weight: 300 !important;
+}
+
+.text-extralight {
+    font-weight: 200 !important;
+}
+
+.text-thin {
+    font-weight: 100 !important;
+}

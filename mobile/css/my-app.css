@@ -1,0 +1,308 @@
+/*==============================================
+[Main stylesheet style.css]
+
+Author:	WM_Team
+Version:	1.1
+Created:	26 Juin 2016
+Last updated:	26 Juin 2016
+Template:	Galaxy - Mobile Web APP Template
+================================================*/
+/*
+[Table of Contents]
+
+1. HOMEPAGE
+2. LOGIN & REGISTRE & REMEMBER PASSWORD
+3. GALLERY
+4. BLOG
+5. COMMENT
+6. CONTACT
+7. USERLIST
+8. RIGHT PANEL
+
+/*===============================================*/
+/* 1. HOMEPAGE		 						     */
+/*===============================================*/
+.overlay {
+	position:absolute;
+	left:0px;
+	right: 0;
+	top:0px;
+	bottom:0px;
+	background: rgba(0,0,0,0.5);
+}
+
+.bg-home {
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.bg-home .content-block {
+	position: relative;
+	color: #FFF;
+}
+
+.logo {
+	display: block;
+	margin: 50px auto 0px auto;
+}
+
+.slogan {
+	width: 80%;
+	margin: 10px auto;
+	font-size: 13px;
+}
+
+.home-footer {
+	position: absolute;
+	bottom: 0px;
+	left:0px;
+	right:0px;
+}
+
+.home-footer a{
+	display:block;
+	text-align: center;
+	width: 50%;
+	float:left;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #FFF;
+}
+
+#login {
+	background:#01B9FF;
+}
+
+#signup {
+	background:#D667CD;
+}
+
+.close {
+	position: absolute;
+	top: 20px;
+	left: 0px;
+}
+
+.close a {
+	padding:20px;
+}
+
+
+/*===============================================*/
+/* 2. LOGIN & REGISTRE & REMEMBER PASSWORD       */
+/*===============================================*/
+
+.login-page .list-block ul::before,
+.comment-form .list-block ul::before {
+    background-color: transparent;
+}
+
+.login-page .layout-dark .list-block ul::before
+.comment-form .layout-dark .list-block ul::before {
+	background-color: transparent;
+}
+
+.login-page .list-block .item-inner {
+	padding-right: 0px;
+}
+.login-page .list-block .item-content {
+	padding-left: 0px;
+}
+.login-page .content-block {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.login-page .item-input input,
+.login-page .item-input textarea {
+	padding-left: 16px;
+}
+.login-page .help-input {
+	margin-right: 10px;
+}
+
+.remember-password {
+	width: 80%;
+	margin: 0px auto 0px auto!important;
+}
+
+/*===============================================*/
+/* 3. GALLERY					                 */
+/*===============================================*/
+.ul.photo_gallery_3{
+width: 100%;
+list-style: outside none none;
+padding: 0px;
+margin: 10px 0px 20px;
+float: left;
+clear: both;
+}
+ul.photo_gallery_3{
+margin:0px;
+padding:0px;
+}
+ul.photo_gallery_3 li{
+width: 31%;
+padding: 0px;
+float: left;
+margin: 1%;
+list-style:none;
+}
+ul.photo_gallery_3 li img{
+margin: 0px!important;
+max-width:100%;
+height:auto;
+}
+
+/*===============================================*/
+/* 4. BLOG                                       */
+/*===============================================*/
+.ks-facebook-card {
+	margin-bottom: 20px;
+}
+.ks-facebook-card .card-header {
+  display: block;
+  padding: 10px;
+}
+.ks-facebook-card .ks-facebook-avatar {
+  float: left;
+}
+.ks-facebook-card .ks-facebook-name {
+  margin-left: 44px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.ks-facebook-card .ks-facebook-date {
+  margin-left: 44px;
+  font-size: 13px;
+  color: #8e8e93;
+}
+.ks-facebook-card .card-content {
+  font-size: 13px;
+}
+
+.ks-facebook-card .blog-title{
+	margin-top: 10px;
+}
+
+.ks-facebook-card .blog-title a{
+	color: #333;
+}
+.ks-facebook-card .card-footer {
+  background: #fafafa;
+}
+.ks-facebook-card .card-footer a {
+  color: #81848b;
+  font-weight: 500;
+}
+.ks-facebook-card .card-content img {
+  display: block;
+}
+.ks-facebook-card .card-content-inner {
+  padding: 15px 10px;
+}
+
+.ks-facebook-avatar img {
+	border-radius: 100%;
+}
+
+.ks-facebook-card .content-block {
+	padding-bottom: 10px;
+}
+.blog-footer a {
+	color: #999;
+	display: inline-block;
+	padding-left: 20px;
+}
+
+.blog-footer a:first-child {
+	padding-left: 0px;
+}
+
+.share-post-icon i:before {
+	font-size: 24px;
+}
+
+.share-post-facebook i{
+	color: #3b5998;
+}
+
+.share-post-twitter i{
+	color: #55acee;
+}
+
+.share-post-whatsapp i{
+	color: #4dc247;
+}
+
+/*===============================================*/
+/* 5. COMMENT                                    */
+/*===============================================*/
+.comment-list .item-text {
+	margin:0px;
+}
+.comment-list img{
+	border-radius: 100%;
+}
+.comment-list.list-block li.media-item .item-inner, .comment-list.list-block.media-list .item-inner {
+	padding-top: 0px!important;
+}
+.comment-list.list-block li.media-item .item-inner, .comment-list.list-block.media-list .item-inner{
+	padding-top: 5px!important;
+	padding-bottom: 10px!important;
+}
+.comment-form.picker-modal {
+	height: 290px;
+}
+.comment-form .list-block input,
+.comment-form .list-block textarea {
+	font-size: 14px;
+}
+
+/*===============================================*/
+/* 6. CONTACT                                    */
+/*===============================================*/
+
+.adress {
+	color: #999;
+	padding-top: 16px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.adress span {
+	font-weight: bold;
+}
+
+/*===============================================*/
+/* 7. USERLIST                                   */
+/*===============================================*/
+
+.user-list .item-text {
+	margin:0px;
+}
+.user-list.list-block li.media-item .item-inner, .user-list.list-block.media-list .item-inner {
+	padding-top: 0px!important;
+}
+.user-list.list-block li.media-item .item-inner, .user-list.list-block.media-list .item-inner{
+	padding-top: 5px!important;
+	padding-bottom: 10px!important;
+}
+.user-list .item-media img {
+	border-radius: 100%;
+}
+
+/*===============================================*/
+/* 8. RIGHT PANEL                                */
+/*===============================================*/
+
+.recent-articles .item-text {
+	margin:0px;
+}
+.recent-articles.list-block li.media-item .item-inner, .recent-articles.list-block.media-list .item-inner {
+	padding-top: 0px!important;
+}
+.recent-articles.list-block li.media-item .item-inner, .recent-articles.list-block.media-list .item-inner{
+	padding-top: 5px!important;
+	padding-bottom: 10px!important;
+}

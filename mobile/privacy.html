@@ -1,0 +1,247 @@
+
+<br /><br />
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+    <style>
+
+        /* 一、样式基本初始化 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+            height: 105.5%;
+            background-color: #ccc9ca;
+        }
+
+        ul,
+        li {
+            list-style: none;
+            text-align: center;
+        }
+
+        /* 导航栏因为是基于屏幕定位，所以padding要进行单独的计算。env在IOS 11.2中新增的，constant在IOS 11.2 已经被废弃，但是我们要做兼容，所以都要用上。 */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            /* 因为header导航栏是基于屏幕进行定位，所以要做单独的padding挤压处理 */
+            padding-right: constant(safe-area-inset-right);
+            padding-left: constant(safe-area-inset-left);
+            padding-right: env(safe-area-inset-right);
+            padding-left: env(safe-area-inset-left);
+            overflow: scroll;
+            background-color: #2889e8;
+        }
+
+            header ul {
+                display: block;
+                width: 200%;
+                background-color: #2889e8;
+                box-sizing: border-box;
+                line-height: 32px;
+                height: 32px;
+                padding: 0 10px;
+            }
+
+                header ul li {
+                    float: left;
+                    padding: 0px 8px;
+                    color: #666;
+                    font-weight: 500;
+                }
+
+                header ul:after {
+                    display: table;
+                    height: 0;
+                    clear: both;
+                    height: 0;
+                    content: "";
+                }
+
+        .show {
+            margin-top: 36px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0px 10px 10px;
+        }
+
+        .active {
+            color: #2889e8;
+            background-color: #ffffff;
+        }
+
+
+        .show li {
+            padding: 10px 0;
+            background-color: #fff;
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+        /* body 在横屏底下和竖屏底下一定要做好定位，不然*/
+        /* 竖屏底下的查询 */
+        @media screen and (orientation: portrait) {
+            body {
+                /* 防止页面被刘海遮住 */
+                padding-top: constant(safe-area-inset-top);
+            }
+        }
+        /* 横屏底下的查询 */
+        @media screen and (orientation: landscape) {
+            body {
+                /* IOS 11支持*/
+                padding-right: constant(safe-area-inset-right);
+                padding-left: constant(safe-area-inset-left);
+                /*IOS 11.2版本版本支持*/
+                padding-right: env(safe-area-inset-right);
+                padding-left: env(safe-area-inset-left);
+            }
+        }
+    </style>
+
+</head>
+
+
+<div class="pages">
+    <!-- Page, "data-page" contains page name -->
+    <div data-page="about" class="page  navbar-fixed">
+
+        <div class="navbar">
+            <div class="navbar-inner">
+              
+               
+               
+            </div>
+        </div>
+        <!-- Scrollable page content -->
+        <div class="page-content">
+            <div class="content-block">
+                <a href="index.html" class="button button-fill color-blue text-capitalize ">返回首页 Index</a>
+            </div>
+            <div class="content-block-title text-uppercase text-bold"><h1>六个隐私政策</h1></div>
+            <div class="content-block">
+                <p>
+                    六个单词本为个人开发应用，以下简称“本应用”<br />
+                    本应用尊重并保护所有使用服务用户的个人隐私权。为了给您提供更准确、更有个性化的服务，本应用会按照本隐私权政策的规定使用和披露您的个人信息。但本应用将以高度的勤勉、审慎义务对待这些信息。除本隐私权政策另有规定外，在未征得您事先许可的情况下，本应用不会将这些信息对外披露或向第三方提供。本应用会不时更新本隐私权政策。 您在同意本应用服务使用协议之时，即视为您已经同意本隐私权政策全部内容。本隐私权政策属于本应用服务使用协议不可分割的一部分。<br /><br />
+                    <br />
+                    1. 适用范围
+
+                    (a) 在您注册本应用帐号时，您根据本应用要求提供的个人注册信息；
+
+                    (b) 在您使用本应用网络服务，或访问本应用平台网页时，本应用自动接收并记录的您的浏览器和计算机上的信息，包括但不限于您的IP地址、浏览器的类型、使用的语言、访问日期和时间、软硬件特征信息及您需求的网页记录等数据；
+
+                    (c) 本应用通过合法途径从商业伙伴处取得的用户个人数据。
+
+                    您了解并同意，以下信息不适用本隐私权政策：
+
+                    (a) 您在使用本应用平台提供的搜索服务时输入的关键字信息；
+
+                    (b) 本应用收集到的您在本应用发布的有关信息数据，包括但不限于参与活动、成交信息及评价详情；
+
+                    (c) 违反法律规定或违反本应用规则行为及本应用已对您采取的措施。
+                    <br />
+
+                    2. 信息使用
+
+                    (a)本应用不会向任何无关第三方提供、出售、出租、分享或交易您的个人信息，除非事先得到您的许可，或该第三方和本应用（含本应用关联公司）单独或共同为您提供服务，且在该服务结束后，其将被禁止访问包括其以前能够访问的所有这些资料。
+
+                    (b) 本应用亦不允许任何第三方以任何手段收集、编辑、出售或者无偿传播您的个人信息。任何本应用平台用户如从事上述活动，一经发现，本应用有权立即终止与该用户的服务协议。
+
+                    (c) 为服务用户的目的，本应用可能通过使用您的个人信息，向您提供您感兴趣的信息，包括但不限于向您发出产品和服务信息，或者与本应用合作伙伴共享信息以便他们向您发送有关其产品和服务的信息（后者需要您的事先同意）。
+
+                    <br />
+                    3. 信息披露
+
+                    在如下情况下，本应用将依据您的个人意愿或法律的规定全部或部分的披露您的个人信息：
+
+                    (a) 经您事先同意，向第三方披露；
+
+                    (b)为提供您所要求的产品和服务，而必须和第三方分享您的个人信息；
+
+                    (c) 根据法律的有关规定，或者行政或司法机构的要求，向第三方或者行政、司法机构披露；
+
+                    (d) 如您出现违反中国有关法律、法规或者本应用服务协议或相关规则的情况，需要向第三方披露；
+
+                    (e) 如您是适格的知识产权投诉人并已提起投诉，应被投诉人要求，向被投诉人披露，以便双方处理可能的权利纠纷；
+
+                    (f) 在本应用平台上创建的某一交易中，如交易任何一方履行或部分履行了交易义务并提出信息披露请求的，本应用有权决定向该用户提供其交易对方的联络方式等必要信息，以促成交易的完成或纠纷的解决。
+
+                    (g) 其它本应用根据法律、法规或者网站政策认为合适的披露。
+                    <br />
+
+                    4. 信息存储和交换
+
+                    本应用收集的有关您的信息和资料将保存在本应用及（或）其关联公司的服务器上，这些信息和资料可能传送至您所在国家、地区或本应用收集信息和资料所在地的境外并在境外被访问、存储和展示。
+
+                    <br />
+                    5. Cookie的使用
+
+                    (a) 在您未拒绝接受cookies的情况下，本应用会在您的计算机上设定或取用cookies ，以便您能登录或使用依赖于cookies的本应用平台服务或功能。本应用使用cookies可为您提供更加周到的个性化服务，包括推广服务。
+
+                    (b) 您有权选择接受或拒绝接受cookies。您可以通过修改浏览器设置的方式拒绝接受cookies。但如果您选择拒绝接受cookies，则您可能无法登录或使用依赖于cookies的本应用网络服务或功能。
+
+                    (c) 通过本应用所设cookies所取得的有关信息，将适用本政策。
+                    <br />
+                    6. 信息安全
+
+                    (a) 本应用帐号均有安全保护功能，请妥善保管您的用户名及密码信息。本应用将通过对用户密码进行加密等安全措施确保您的信息不丢失，不被滥用和变造。尽管有前述安全措施，但同时也请您注意在信息网络上不存在“完善的安全措施”。
+
+                    (b) 在使用本应用网络服务进行网上交易时，您不可避免的要向交易对方或潜在的交易对
+                    <br />
+                    7.本隐私政策的更改
+
+                    (a)如果决定更改隐私政策，我们会在本政策中、六个单词本公告中以及我们认为适当的位置发布这些更改，以便您了解我们如何收集、使用您的个人信息，哪些人可以访问这些信息，以及在什么情况下我们会透露这些信息。
+
+                    (b)六个单词本保留随时修改本政策的权利，因此请经常查看。如对本政策作出重大更改，六个单词本会通过网站通知的形式告知。
+
+                    方披露自己的个人信息，如联络方式或者邮政地址。请您妥善保护自己的个人信息，仅在必要的情形下向他人提供。如您发现自己的个人信息泄密，尤其是本应用用户名及密码发生泄露，请您立即联络六个客服service@cloudsking.com，以便本应用采取相应措施。
+
+
+                </p>
+            </div>
+
+
+
+            <div class="content-block-title text-uppercase text-bold"><h1>使用协议</h1></div>
+            <div class="content-block">
+                <p>
+                    Terms & Conditions
+                    By downloading or using the app, these terms will automatically apply to you – you should make sure therefore that you read them carefully before using the app. You’re not allowed to copy, or modify the app, any part of the app, or our trademarks in any way. You’re not allowed to attempt to extract the source code of the app, and you also shouldn’t try to translate the app into other languages, or make derivative versions. The app itself, and all the trade marks, copyright, database rights and other intellectual property rights related to it, still belong to Leo.
+
+                    Leo Li is committed to ensuring that the app is as useful and efficient as possible. For that reason, we reserve the right to make changes to the app or to charge for its services, at any time and for any reason. We will never charge you for the app or its services without making it very clear to you exactly what you’re paying for.
+
+                    The 六个单词本 app stores and processes personal data that you have provided to us, in order to provide my Service. It’s your responsibility to keep your phone and access to the app secure. We therefore recommend that you do not jailbreak or root your phone, which is the process of removing software restrictions and limitations imposed by the official operating system of your device. It could make your phone vulnerable to malware/viruses/malicious programs, compromise your phone’s security features and it could mean that the 六个单词本 app won’t work properly or at all.
+
+                    You should be aware that there are certain things that Leo will not take responsibility for. Certain functions of the app will require the app to have an active internet connection. The connection can be Wi-Fi, or provided by your mobile network provider, but Leo cannot take responsibility for the app not working at full functionality if you don’t have access to Wi-Fi, and you don’t have any of your data allowance left.
+
+                    If you’re using the app outside of an area with Wi-Fi, you should remember that your terms of the agreement with your mobile network provider will still apply. As a result, you may be charged by your mobile provider for the cost of data for the duration of the connection while accessing the app, or other third party charges. In using the app, you’re accepting responsibility for any such charges, including roaming data charges if you use the app outside of your home territory (i.e. region or country) without turning off data roaming. If you are not the bill payer for the device on which you’re using the app, please be aware that we assume that you have received permission from the bill payer for using the app.
+
+                    Along the same lines, Leo cannot always take responsibility for the way you use the app i.e. You need to make sure that your device stays charged – if it runs out of battery and you can’t turn it on to avail the Service, Leo cannot accept responsibility.
+
+                    With respect to Leo’s responsibility for your use of the app, when you’re using the app, it’s important to bear in mind that although we endeavour to ensure that it is updated and correct at all times, we do rely on third parties to provide information to us so that we can make it available to you. Leo accepts no liability for any loss, direct or indirect, you experience as a result of relying wholly on this functionality of the app.
+
+                    At some point, we may wish to update the app. The app is currently available on Android & iOS – the requirements for both systems (and for any additional systems we decide to extend the availability of the app to) may change, and you’ll need to download the updates if you want to keep using the app. Leo does not promise that it will always update the app so that it is relevant to you and/or works with the Android & iOS version that you have installed on your device. However, you promise to always accept updates to the application when offered to you, We may also wish to stop providing the app, and may terminate use of it at any time without giving notice of termination to you. Unless we tell you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must stop using the app, and (if needed) delete it from your device.
+
+                    Changes to This Terms and Conditions
+
+                    I may update our Terms and Conditions from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Terms and Conditions on this page. These changes are effective immediately after they are posted on this page.
+
+                    Contact Us
+
+                    If you have any questions or suggestions about my Terms and Conditions, do not hesitate to contact me at service@cloudsking.com.
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>

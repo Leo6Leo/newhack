@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="img/apple-touch-startup-image-320x460.png" />
+
+    <meta name="mobile-web-app-capable" content="yes">
+
+
+    <!-- Your app title -->
+    <title>01 Studio</title>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+    <!-- Path to Framework7 Library CSS, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <!-- Path to Framework7 color related styles, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="font/flaticon.css">
+    <link rel="stylesheet" href="css/swipebox.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/my-app.css">
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+    <style>
+
+        /* 一、样式基本初始化 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+            height: 115%;
+            background-color: #ffffff;
+        }
+
+        ul,
+        li {
+            list-style: none;
+            text-align: center;
+        }
+
+        /* 导航栏因为是基于屏幕定位，所以padding要进行单独的计算。env在IOS 11.2中新增的，constant在IOS 11.2 已经被废弃，但是我们要做兼容，所以都要用上。 */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            /* 因为header导航栏是基于屏幕进行定位，所以要做单独的padding挤压处理 */
+            padding-right: constant(safe-area-inset-right);
+            padding-left: constant(safe-area-inset-left);
+            padding-right: env(safe-area-inset-right);
+            padding-left: env(safe-area-inset-left);
+            overflow: scroll;
+            background-color: #2889e8;
+        }
+
+            header ul {
+                display: block;
+                width: 200%;
+                background-color: #2889e8;
+                box-sizing: border-box;
+                line-height: 32px;
+                height: 32px;
+                padding: 0 10px;
+            }
+
+                header ul li {
+                    float: left;
+                    padding: 0px 8px;
+                    color: #666;
+                    font-weight: 500;
+                }
+
+                header ul:after {
+                    display: table;
+                    height: 0;
+                    clear: both;
+                    height: 0;
+                    content: "";
+                }
+
+        .show {
+            margin-top: 36px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0px 10px 10px;
+        }
+
+        .active {
+            color: #2889e8;
+            background-color: #ffffff;
+        }
+
+
+        .show li {
+            padding: 10px 0;
+            background-color: #fff;
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+        /* body 在横屏底下和竖屏底下一定要做好定位，不然*/
+        /* 竖屏底下的查询 */
+        @media screen and (orientation: portrait) {
+            body {
+                /* 防止页面被刘海遮住 */
+                padding-top: constant(safe-area-inset-top);
+            }
+        }
+        /* 横屏底下的查询 */
+        @media screen and (orientation: landscape) {
+            body {
+                /* IOS 11支持*/
+                padding-right: constant(safe-area-inset-right);
+                padding-left: constant(safe-area-inset-left);
+                /*IOS 11.2版本版本支持*/
+                padding-right: env(safe-area-inset-right);
+                padding-left: env(safe-area-inset-left);
+            }
+        }
+    </style>
+</head>
+
+<body class="theme-blue">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+   
+    <!-- Right panel with cover effect-->
+    
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content bg-home">
+                        <div class="overlay"></div>
+                        <div class="content-block text-center">
+
+                            <div class="offset-bottom-75"></div>
+                            <h1>六个单词本</h1>
+                            <h4 class="slogan">让我为你的学习助力</h4>
+                            <br /><br /><br />
+                            <a href="resultvocab.php" class="no-border-raduis button button-fill color-green" id="login">查单词</a><br /><br />
+                            <a href="register.html" class="no-border-raduis button button-fill color-red" id="signup">注册 Sign up</a><br /><br />
+                            <a href="help.html" class="no-border-raduis button button-fill color-blue" id="signup">帮助中心 Help</a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/jquery.swipebox.js"></script>
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
