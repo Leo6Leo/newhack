@@ -301,7 +301,7 @@
 
     <div class="container">
         <div class="col-md-12">
-            <h1 class="margin-bottom-15">√注册成功！</h1>
+            <h1 class="margin-bottom-15">√Registration successfully！</h1>
             <form class="form-horizontal templatemo-container templatemo-login-form-1 margin-bottom-30" role="form" action="http://baidu.com" method="post">
                 <div class="form-group">
                     <div class="col-xs-12">
@@ -309,14 +309,14 @@
 
 				 <div class="form-group">
                     <div class="col-md-12">
-                        <label for="mailnum" class="control-label fa-label"><i class="fa fa-envelope fa-medium"> 邮箱</i></label>
-                        <input type="text" class="form-control" name="fromerengname" placeholder="系统自动获取" readonly value="<?php echo "$mailnum";
+                        <label for="mailnum" class="control-label fa-label"><i class="fa fa-envelope fa-medium"> email</i></label>
+                        <input type="text" class="form-control" name="fromerengname" placeholder="System will get the information automatically" readonly value="<?php echo "$mailnum";
                 ?>" autocomplete="off">
 				<br><br>
                     </div>
 					 <div class="col-md-12">
                         <label for="mailnum" class="control-label fa-label"><i class="fa fa-user fa-medium"> 学号</i></label>
-                        <input type="text" class="form-control" name="fromerengname" placeholder="系统自动获取" readonly value="<?php echo "$username";
+                        <input type="text" class="form-control" name="fromerengname" placeholder="System will get the information automatically" readonly value="<?php echo "$username";
                 ?>" autocomplete="off">
 				<br><br>
                     </div>
@@ -332,7 +332,7 @@
                 <div class="form-group">
                     <div class="col-md-12">
                         <div class="control-wrapper">
-                            <a href="index.php" onclick="showMask();" class="btn btn-success"><span style="color:white;">转去查词 <i class="fa fa-arrow-circle-o-right"></i></span></a>
+                            <a href="index.php" onclick="showMask();" class="btn btn-success"><span style="color:white;">Turn to query <i class="fa fa-arrow-circle-o-right"></i></span></a>
 
                             <div id="alert" style="display:none; text-align:center; "><span class="ld ld-ring ld-spin" style="font-size:300%;"></span></div>
                         </div>
@@ -341,7 +341,7 @@
                 <hr />
                 <div class="form-group">
                     <div class="col-md-12">
-                        <label style="font-size:150%;"><i class="fa fa-asterisk"></i>请务必牢记你的学号，它是你用来登录的用户名 </label>
+                        <label style="font-size:150%;"><i class="fa fa-asterisk"></i>Please remember your student number, it's the username for you to log in.</label>
 
                     </div>
                 </div>
