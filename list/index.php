@@ -43,11 +43,7 @@ if (!isset ( $_COOKIE ["username"] )) {//判断code存不存在，如果不存�
 	
 
 	<table class="table table-striped" id="tb_departments">
-        <tr>
-            <th>Word</th>
-            <th>Chinese Meanning</th>
-            <th>Num. of time searched</th>
-        </tr>
+        
 	<?php   
   session_start();//Session start
         $username=$_COOKIE["username"];//get the user name 
