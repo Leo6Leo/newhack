@@ -32,11 +32,11 @@ if (!isset ( $_COOKIE ["username"] )) {//判断code存不存在，如果不存�
 
     <div id="reportTableDiv" class="span10" style="width:100%; text-align:center">
       
-	  <div class="alert alert-success"><h1>我的词表</h1>
+	  <div class="alert alert-success"><h1>My vocab list</h1>
         <h2>My Word List</h2></div>
-        <div class="alert alert-warning"><h4>你可以选择以excel格式导出单词，并且将它们导入quizlet.com，轻松愉快的记单词</h4>
-		 <h4>请您使用电脑登录 http://cloudsking.com/vocabularytest 导出单词</h4>
-		 <a href="../vocab.html">返回查词 Go Back to Navibar</a><br>
+        <div class="alert alert-warning"><h4>You could choose export .xlsx file，and import it into Quizlet.com, help you learn effectively.</h4>
+		 <h4>Please use PC log into to http://cloudsking.com/vocabularytest to export vocabulary</h4>
+		 <a href="../vocab.html">Go Back to Navibar</a><br>
         </div>
 
     </div>
@@ -44,24 +44,24 @@ if (!isset ( $_COOKIE ["username"] )) {//判断code存不存在，如果不存�
 
 	<table class="table table-striped" id="tb_departments">
         <tr>
-            <th>单词</th>
-            <th>中文意思</th>
-            <th>查询次数</th>
+            <th>Word</th>
+            <th>Chinese Meanning</th>
+            <th>Num. of time searched</th>
         </tr>
 	<?php   
-  session_start();//获取用户登录信息
-        $username=$_COOKIE["username"];//��ȡhtml�е��û�����ͨ��post����  
+  session_start();//Session start
+        $username=$_COOKIE["username"];//get the user name 
 
 		$ip=$_SERVER['REMOTE_ADDR'];
 		$behave='list';
          $con=mysql_connect("localhost","sixboxsixbox","sixbox"); //sql connect
 		    mysql_query("set names 'utf8'");
         if (!$con) {  
-            die('连接出错'.$mysql_error());  
+            die('connection faied'.$mysql_error());  
         }  
         mysql_select_db("xdm447914479_db",$con);//链接数据库 
-        $result=mysql_query("select * from 6boxespersonal where username='{$username}'");//遍历图书馆表格
-		mysql_query("insert into 6boxeslog (username,behave,ip) values('{$username}','{$behave}','{$ip}')") or die("连接出错".mysql_error()) ;  
+        $result=mysql_query("select * from 6boxespersonal where username='{$username}'");//遍历词语表格
+		mysql_query("insert into 6boxeslog (username,behave,ip) values('{$username}','{$behave}','{$ip}')") or die("Connection failed".mysql_error()) ;  
 
 		 
         while ($row=mysql_fetch_array($result)) {//Leeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeo 
