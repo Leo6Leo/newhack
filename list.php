@@ -23,11 +23,11 @@
 
     <div id="reportTableDiv" class="span10" style="width:100%; text-align:center">
       
-	  <div class="alert alert-success"><h1>我的词表</h1>
+	  <div class="alert alert-success"><h1>My Word List</h1>
         <h2>My Word List</h2></div>
-        <div class="alert alert-warning"><h4>你可以选择以excel格式导出单词，并且将它们导入quizlet.com，轻松愉快的记单词</h4>
+        <div class="alert alert-warning"><h4>You choose to export word with excel format, and import them to quizlet.com, enjoy your journey!</h4>
 		 
-		 <a href="vocab.html">返回查词 Go Back to Navibar</a><br>
+		 <a href="vocab.html"> Go Back to Navibar</a><br>
         </div>
 
     </div>
@@ -35,9 +35,9 @@
 
 	<table class="table table-striped" id="tb_departments">
         <tr>
-            <th>单词</th>
-            <th>中文意思</th>
-            <th>查询次数</th>
+            <th>Word</th>
+            <th>Chinese meaning</th>
+            <th>Number of time searched</th>
         </tr>
 	<?php   
   session_start();//获取用户登录信息
@@ -48,11 +48,11 @@
         $con=mysql_connect("localhost","sixbox","sixboxsixbox");  
 		    mysql_query("set names 'utf8'");
         if (!$con) {  
-            die('连接出错'.$mysql_error());  
+            die('Connection failure'.$mysql_error());  
         }  
         mysql_select_db("xdm447914479_db",$con);//链接数据库 
         $result=mysql_query("select * from 6boxespersonal where username='{$username}'");//遍历图书馆表格
-		mysql_query("insert into 6boxeslog (username,behave,ip) values('{$username}','{$behave}','{$ip}')") or die("连接出错".mysql_error()) ;  
+		mysql_query("insert into 6boxeslog (username,behave,ip) values('{$username}','{$behave}','{$ip}')") or die("Connection failure".mysql_error()) ;  
 
 		 
         while ($row=mysql_fetch_array($result)) {//Leeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeo 
@@ -107,17 +107,17 @@ var TableInit = function () {
             columns: [{
                
                 field: 'wordname',
-                title: '单词',
+                title: 'Word',
 				sortable:'true'
             }, {
                 field: 'def',
-                title: '中文意思',
+                title: 'Chinese meaning',
 				sortable:'true'
             }, {
          
 
                 field: 'checking',
-                title: '查询次数',
+                title: 'Number of time searched',
 				sortable:'true'
             }, ]
         });
