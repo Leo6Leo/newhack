@@ -19,11 +19,11 @@ $behave ='Find your Word';
 $ip=$_SERVER['REMOTE_ADDR'];
 $method='Webpage Version';
 
-$doc->loadHTMLFile('http://www.youdao.com/w/eng/'.$wordname );
+$doc->loadHTMLFile('http://www.youdao.com/w/eng/'.$wordname );//有道接入
 
-$xpath = new DOMXPath($doc);
+$xpath = new DOMXPath($doc);//定位元素
 
-$query = "//*[@id='phrsListTab']/div/ul/li";
+$query = "//*[@id='phrsListTab']/div/ul/li";//定位元素2
 
 $entries = $xpath->query($query);
 $haha = $entries->item(0)->textContent;
@@ -33,7 +33,7 @@ if($haha == "" || $wordname ==""){
 	$_SESSION["wordname"]=$wordname;
 	?>
 	 <script language="javascript" type="text/javascript">
-window.location.href="resultvocab.php";
+window.location.href="resultvocab.php";//返回抓取到的数据
 </script>
 
 	<?php
@@ -43,7 +43,7 @@ window.location.href="resultvocab.php";
 
 	
 
-		 $con=mysql_connect("localhost","sixbox","sixboxsixbox");  
+		 $con=mysql_connect("localhost","sixbox","sixboxsixbox");  //数据库
         mysql_query("set names 'utf8'");
 
         if (!$con) {  

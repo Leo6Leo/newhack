@@ -5,7 +5,7 @@
 </head>  
 <body>  
 <?php  
-session_start ();//将session销毁时调用destroy  
+session_start ();//session destroy  
                 $_SESSION["mailnum"]='';  
 				$_SESSION["englishname"]='';  
 				 $_SESSION["grade"]='';  
