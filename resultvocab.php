@@ -40,22 +40,22 @@ $haha=$_SESSION["haha"];
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
  <div class="container" style="text-align:center;">
         <div class="col-md-12">
-            <h1 class="margin-bottom-15">上次结果</h1>
-	<p>你输入的单词：
+            <h1 class="margin-bottom-15">Last Result</h1>
+	<p>The word that you enter is:
 	<?php
 	
 	print($wordname);
 	?>
 	</p>
 	<br>
-	<p>它的中文意思是：
+	<p>It's chinese meaning is:
 	<?php
 	print($haha);
 	
 	
 	?>
 	<br><br>
-	<p>感谢有道词典提供词库支持</p>
+	<p>Thank you for the support of youdao disctionnary </p>   
 	</div>
 	</div>
 	
@@ -347,11 +347,11 @@ $haha=$_SESSION["haha"];
 
     <div class="container">
         <div class="col-md-12">
-            <h1 class="margin-bottom-15">请查词</h1>
+            <h1 class="margin-bottom-15">Please look up word</h1>
             <form class="form-horizontal templatemo-forgot-password-form templatemo-container" role="form" action="word.php" method="post">
                 <div class="form-group">
                     <div class="col-md-12">
-                        请输入英文单词
+                       Please enter english word
                     </div>
                 </div>
                 <div class="form-group">
@@ -362,7 +362,7 @@ $haha=$_SESSION["haha"];
                 <div class="form-group">
                     <div class="col-md-12">
                         <label>公告:还在内测阶段，可能出现BUG！在国外使用会有1-2秒的查询延迟 </label>
-
+                               Notice:
                     </div>
                 </div>
                 <div class="form-group">
@@ -370,8 +370,8 @@ $haha=$_SESSION["haha"];
                         <input type="submit" onclick="showMask();" value="提交" class="btn btn-danger" />
                         <br /><br />
                 
-						√已登录<br><a href="exit.php" onclick="showMask();">退出登录</a><br /><br />
-                        <a href="list" onclick="showMask();">获取我的词表</a>
+						 √Logged in<br><a href="exit.php" onclick="showMask();">log out</a><br /><br />
+                        <a href="list" onclick="showMask();">Get my dictionary list</a>
                         <div id="alert" style="display:none; text-align:center; "><span class="ld ld-ring ld-spin" style="font-size:300%;"></span></div>
                     </div>
                 </div>
