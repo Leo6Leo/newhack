@@ -8,7 +8,7 @@
     <?php   
         session_start();
 
-		if (isset ( $_COOKIE ["mailnum"] ) || isset($_COOKIE["username"])) {//判断code存不存在，如果不存在，说明异常登录
+		if (isset ( $_COOKIE ["username"] )) {//判断code存不存在，如果不存在，说明异常登录
 		?>
 		<script type="text/javascript">  
 
