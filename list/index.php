@@ -117,17 +117,17 @@ var TableInit = function () {
             columns: [{
                
                 field: 'wordname',
-                title: '单词',
+                title: 'Word',
 				sortable:'true'
             }, {
                 field: 'def',
-                title: '中文意思',
+                title: 'Chinese Meanning',
 				sortable:'true'
             }, {
          
 
                 field: 'checking',
-                title: '查询次数',
+                title: 'Times Searched',
 				sortable:'true'
             }, ]
         });
