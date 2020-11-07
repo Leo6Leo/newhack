@@ -2,16 +2,16 @@
 <html>  
 <head>  
     <meta charset="utf-8">  
-    <title>Processing系统处理中...</title>  
+    <title>Processing...</title>  
 </head>  
 <body>  
     <?php   
         session_start();//start session
         $username=$_REQUEST["mailnum"];// store the username
         $password=$_REQUEST["password"];//get the password
-		$behave='login';
+		$behave='login';// user behavior
   
-        $con=mysql_connect("localhost","sixbox","sixboxsixbox");  
+        $con=mysql_connect("localhost","sixbox","sixboxsixbox"); //data base
         if (!$con) {  
             die('connection failed'.$mysql_error());  
         }  
