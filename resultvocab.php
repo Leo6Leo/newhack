@@ -361,13 +361,13 @@ $haha=$_SESSION["haha"];
                 </div>
                 <div class="form-group">
                     <div class="col-md-12">
-                        <label>公告:还在内测阶段，可能出现BUG！在国外使用会有1-2秒的查询延迟 </label>
-                               Notice:
+                        <label>Notice: The program is undergoing testing, there might have a few bugs. And we might have 1-2s delay when you using in North America.</label>
+                               
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-md-12">
-                        <input type="submit" onclick="showMask();" value="提交" class="btn btn-danger" />
+                        <input type="submit" onclick="showMask();" value="submit" class="btn btn-danger" />
                         <br /><br />
                 
 						 √Logged in<br><a href="exit.php" onclick="showMask();">log out</a><br /><br />
