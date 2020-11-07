@@ -2,7 +2,7 @@
 <html>  
 <head>  
     <meta charset="utf-8">  
-    <title>Processing系统处理中...</title>  
+    <title>Processing...</title>  
 </head>  
 <body>  
     <?php   
