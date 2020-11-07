@@ -68,7 +68,7 @@ if($haha == ""){
 	
 	?>
 	<br><br>
-	<p>感谢有道词典提供词库支持</p>
+	<p>Sincerely appreciate the volcabulary resources provided by Youdao Dictionary</p>
 	</div>
 	</div>
 	
@@ -78,7 +78,7 @@ if($haha == ""){
         mysql_query("set names 'utf8'");
 
         if (!$con) {  
-            die('数据库连接失败'.$mysql_error());  
+            die('Failed to connect to database'.$mysql_error());  
         }  
         mysql_select_db("xdm447914479_db",$con);  
 			mysql_query("set names 'utf8'");
@@ -371,21 +371,21 @@ if($haha == ""){
 
     <div class="container">
         <div class="col-md-12">
-            <h1 class="margin-bottom-15">请查词</h1>
+            <h1 class="margin-bottom-15">Please search a word</h1>
             <form class="form-horizontal templatemo-forgot-password-form templatemo-container" role="form" action="word.php" method="post">
                 <div class="form-group">
                     <div class="col-md-12">
-                        请输入英文单词
+                        Please type in an English word
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-md-12">
-                        <input type="text" class="form-control" id="wordname" name="wordname" placeholder="暂时只支持英文" />
+                        <input type="text" class="form-control" id="wordname" name="wordname" placeholder="Only English is supported temporarily" />
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-md-12">
-                        <label>公告:还在内测阶段，可能出现BUG！在国外使用会有1-2秒的查询延迟 </label>
+                        <label>Announcement: program is still in testing phase, and unexpected bugs may be encountered！ALso note that there is a delay of 1-2 seconds if accessing from outside China. </label>
 
                     </div>
                 </div>
@@ -393,7 +393,7 @@ if($haha == ""){
                     <div class="col-md-12">
                         <input type="submit" onclick="showMask();" value="提交" class="btn btn-danger" />
                         <br /><br />
-                        <a href="index.html">退出登录</a>
+                        <a href="index.html">Exit</a>
                         <div id="alert" style="display:none; text-align:center; "><span class="ld ld-ring ld-spin" style="font-size:300%;"></span></div>
                     </div>
                 </div>
