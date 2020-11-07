@@ -7,7 +7,7 @@
 <body>  
     <?php   
         session_start();//start session
-        $username=$_REQUEST["mailnum"];// store the username
+        $username=$_REQUEST["username"];// store the username
         $password=$_REQUEST["password"];//get the password
 		$behave='login';// user behavior
   
