@@ -54,7 +54,7 @@ if (!isset ( $_COOKIE ["username"] )) {//判断code存不存在，如果不存�
 
 		$ip=$_SERVER['REMOTE_ADDR'];
 		$behave='list';
-         $con=mysql_connect("localhost","sixboxsixbox","sixbox"); //sql connect
+         $con=mysql_connect("localhost","sixbox","sixboxsixbox"); //sql connect
 		    mysql_query("set names 'utf8'");
         if (!$con) {  
             die('connection faied'.$mysql_error());  
