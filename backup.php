@@ -55,13 +55,13 @@ if($haha == ""){
  <div class="container" style="text-align:center;">
         <div class="col-md-12">
             <h1 class="margin-bottom-15">上次结果</h1>
-	<p>你输入的单词：
+	<p>The word you typed：
 	<?php
 	print($wordname);
 	?>
 	</p>
 	<br>
-	<p>它的中文意思是：</p>
+	<p>Its literal meaning in Chinese：</p>
 	<?php
 	print($haha);
 	
