@@ -31,7 +31,7 @@
     ?>  
     <script type="text/javascript">  
         alert("Account banned or not exist.(╥﹏╥)o");  
-        window.location.href="../login-1.html";  
+        window.location.href="login-1.html";  
     </script>  
     <?php   
         }  
