@@ -292,7 +292,7 @@
             var password = document.getElementById("password").value;
             var miyao = document.getElementById("miyao").value;
             if (mailnum == "" || realname == "" || phonenum == "" || username == "" || engname == "" || sex == "" || grade == "" || classnum == "" || bornyear == "" || bornmonth == "" || bornday == "" || password.length <= 5 || miyao == "" ) {
-                alert("提交失败：关键信息不能为空或密码长度不足6位");
+                alert("Submission failed: cannot be blank and the password cannot be fewer than 6 digits");
                 hideMask();
 
             } else {
@@ -310,7 +310,7 @@
 
 
 
-    <h1 class="margin-bottom-15">创建01学号账户</h1>
+    <h1 class="margin-bottom-15">Created Student Account 01</h1>
 
     <div class="container">
         <div class="col-md-12">
@@ -318,87 +318,87 @@
                 <div class="form-inner">
                     <div class="form-group">
                         <div class="col-md-6">
-                            <label for="first_name" class="control-label">真实姓名</label>
-                            <input type="text" class="form-control" id="realname" name="realname" placeholder="输入虚假信息可能导致你无法匹配成绩" />
+                            <label for="first_name" class="control-label">Legal Name</label>
+                            <input type="text" class="form-control" id="realname" name="realname" placeholder="Submitting the wrong information may resulting in unable to matching results" />
                         </div>
                         <div class="col-md-6">
-                            <label for="last_name" class="control-label">微信号</label>
-                            <input type="text" class="form-control" id="phonenum" name="phonenum" placeholder="助教会添加你" />
+                            <label for="last_name" class="control-label">Wechat ID</label>
+                            <input type="text" class="form-control" id="phonenum" name="phonenum" placeholder="Teaching assistant will add you" />
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-12">
-                            <label for="mailnum" class="control-label">邮箱</label>
-                            <input type="email" class="form-control" id="mailnum" name="mailnum" placeholder="请确认准确，邮箱将作为你登录的凭证" />
+                            <label for="mailnum" class="control-label">Email</label>
+                            <input type="email" class="form-control" id="mailnum" name="mailnum" placeholder="Please verify the information has been filled correctly. Your email address will be your authentification when logging in" />
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="col-md-6">
-                            <label for="username" class="control-label">用户名</label>
-                            <input type="text" class="form-control" id="username" name="username" placeholder="彰显你的个性" />
+                            <label for="username" class="control-label">User Name</label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Demonstrate your individuality" />
                         </div>
                         <div class="col-md-6">
-                            <label for="username" class="control-label">英文名</label>
-                            <input type="text" class="form-control" id="engname" name="engname" placeholder="真实英文名，首字母大写" />
+                            <label for="username" class="control-label">English Name</label>
+                            <input type="text" class="form-control" id="engname" name="engname" placeholder="Actual English name, with the first letter capitalized" />
                         </div>
 
                         
                     </div>
                     <div class="form-group">
                         <div class="col-md-2">
-                            <label for="grade" class="control-label">性别</label>
+                            <label for="grade" class="control-label">Gender</label>
                             <select class="form-control" id="sex" name="sex" placeholder="" required >
-                                <option value="" style="display:none;">选择</option>
-                                <option value="male">男</option>
-                                <option value="female">女</option>
+                                <option value="" style="display:none;">Option</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
                             </select>
                             
                         </div>
                         <div class="col-md-2">
-                            <label for="miyao" class="control-label">年级</label>
-                            <input type="text" class="form-control" id="grade" name="grade" placeholder="例12" />
+                            <label for="miyao" class="control-label">Grade</label>
+                            <input type="text" class="form-control" id="grade" name="grade" placeholder="e.g. 12" />
                         </div>
                         <div class="col-md-2">
-                            <label for="miyao" class="control-label">班级</label>
-                            <input type="text" class="form-control" id="classnum" name="classnum" placeholder="例01" />
+                            <label for="miyao" class="control-label">Class</label>
+                            <input type="text" class="form-control" id="classnum" name="classnum" placeholder="e.g. 01" />
                         </div>
                         <div class="col-md-2">
-                            <label for="miyao" class="control-label">出生年</label>
-                            <input type="text" class="form-control" id="bornyear" name="bornyear" placeholder="例2002" />
+                            <label for="miyao" class="control-label">Year of birth</label>
+                            <input type="text" class="form-control" id="bornyear" name="bornyear" placeholder="e.g. 2002" />
                         </div>
                         <div class="col-md-2">
-                            <label for="miyao" class="control-label">出生月</label>
-                            <input type="text" class="form-control" id="bornmonth" name="bornmonth" placeholder="例06" />
+                            <label for="miyao" class="control-label">Month of birth</label>
+                            <input type="text" class="form-control" id="bornmonth" name="bornmonth" placeholder="e.g. 06" />
                         </div>
                         <div class="col-md-2">
-                            <label for="miyao" class="control-label">出生日</label>
-                            <input type="text" class="form-control" id="bornday" name="bornday" placeholder="例01" />
+                            <label for="miyao" class="control-label">Day of birth</label>
+                            <input type="text" class="form-control" id="bornday" name="bornday" placeholder="e.g. 01" />
                         </div>
 
                     </div>
                     <div class="form-group">
                         <div class="col-md-6">
-                            <label for="password" class="control-label">密码</label>
-                            <input type="password" class="form-control" required id="password" name="password" placeholder="建议你设置一个复杂度较高的密码" />
+                            <label for="password" class="control-label">Password</label>
+                            <input type="password" class="form-control" required id="password" name="password" placeholder="We recommand you to set a more complex password" />
                         </div>
                         <div class="col-md-6">
-                            <label for="miyao" class="control-label">神奇秘钥(用于一键找回密码)</label>
-                            <input type="text" class="form-control" required id="miyao" name="miyao" placeholder="输入你最熟悉的人或物，确保你一定会记得" />
+                            <label for="miyao" class="control-label">Magical Key(in case you forgot your password)</label>
+                            <input type="text" class="form-control" required id="miyao" name="miyao" placeholder="Input something you are most familiar with, just so that you will always remember" />
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-md-12">
-                            <label><input type="checkbox" checked="checked" disabled />我确认以上所填的信息真实准确无误，并且我愿意承担一切因填写错误信息带来的后果,否则我不能注册01学号账户。我同意01服务使用守则和<a href="https://cloudsking.com/privacy.html">01隐私协议</a></label>
+                            <label><input type="checkbox" checked="checked" disabled />I confirm that the above information are correct, and am willing to take responsibility of the consequences resulted from incorrect information. I agree to abibe by the legal agreements<a href="https://cloudsking.com/privacy.html">01pricacy policy</a></label>
 
                         </div>
 
                     </div>
                     <div class="form-group">
                         <div class="col-md-12">
-                            <a href="javascript:;" data-toggle="modal" class="btn btn-success" data-target="#templatemo_modal" style="text-align:center;">确认信息</a>
-                            <div id="alert" style="display:none; text-align:center; "><span class="ld ld-ring ld-spin" style="font-size:300%;"></span>  Processing...<br />若等待时间过长，建议你刷新页面重新填写</div>
-                            <a href="index.html" class="pull-right">返回导航</a>
+                            <a href="javascript:;" data-toggle="modal" class="btn btn-success" data-target="#templatemo_modal" style="text-align:center;">confirm information</a>
+                            <div id="alert" style="display:none; text-align:center; "><span class="ld ld-ring ld-spin" style="font-size:300%;"></span>  Processing...<br />If you have waited for too long, we recommand you to refresh the webpage or fill the information again</div>
+                            <a href="index.html" class="pull-right">back to word search</a>
 
 
 
@@ -415,15 +415,15 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                    <h4 class="modal-title" id="myModalLabel">提交确认</h4>
+                    <h4 class="modal-title" id="myModalLabel">confirm submission</h4>
                 </div>
                 <div class="modal-body">
-                    <p>我确认我所填写的信息真实有效，且确认同意01服务使用协议及01隐私协议。并且我知晓老师的批改结果正确与否与01考试中心无关，01考试中心仅提供技术支持。信息提交后不可以进行任何修改，若审核过程中发现信息错误，我的申请将会被驳回，需要重新提交注册申请。<br />在提交成功后的7个工作日内，系统会为你生成专属于您的01学号，在考试时需要你填写在试卷上！</p>
+                    <p>I confirm that all my information is correct, and agree to the 01terms of service and 01privacy policy。and I understand that the 01test center is not responsible for the correctness of grading from instructors，the 01test center only provides technocal support. Information submitted cannot be subject to change. I understand that if error is detected, my application will be rejected, and I need to fill in my application again.。<br />Within a few days after submission, the system will generate your 01student number automatically, you must fill in your student number on your tests！</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-info" onclick="showMask();" data-dismiss="modal">提交信息</button>
+                    <button type="submit" class="btn btn-info" onclick="showMask();" data-dismiss="modal">Submit information</button>
 
-                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
