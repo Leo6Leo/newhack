@@ -1,0 +1,437 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>01 Studio</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
+    <link href="css/loading.css" rel="stylesheet" type="text/css" />
+    <script src="../jquery.min.js"></script>
+    <style>
+
+
+
+        #mask {
+            position: absolute;
+            top: 0px;
+            filter: alpha(opacity=60);
+            background-color: #777;
+            z-index: 0;
+            left: 0px;
+            opacity: 0.2;
+        }
+
+        #loading {
+            background-color: rgba(255,255,255,1);
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            margin-top: 0px;
+            top: 0px;
+        }
+
+        #loading-center {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        #loading-center-absolute {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 100px;
+            width: 100px;
+            margin-top: -50px;
+            margin-left: -50px;
+        }
+
+        .object {
+            width: 25px;
+            height: 25px;
+            background-color: rgba(255,255,255,0);
+            margin-right: auto;
+            margin-left: auto;
+            border: 4px solid rgba(239,74,74,1);
+            left: 37px;
+            top: 37px;
+            position: absolute;
+        }
+
+        #first_object {
+            -webkit-animation: first_object 1s infinite;
+            animation: first_object 1s infinite;
+            -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+        }
+
+        #second_object {
+            -webkit-animation: second_object 1s infinite;
+            animation: second_object 1s infinite;
+        }
+
+        #third_object {
+            -webkit-animation: third_object 1s infinite;
+            animation: third_object 1s infinite;
+            -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+        }
+
+        #forth_object {
+            -webkit-animation: forth_object 1s infinite;
+            animation: forth_object 1s infinite;
+        }
+
+        @-webkit-keyframes first_object {
+            0% {
+                -ms-transform: translate(1,1) scale(1,1);
+                -webkit-transform: translate(1,1) scale(1,1);
+                transform: translate(1,1) scale(1,1);
+            }
+
+            50% {
+                -ms-transform: translate(150%,150%) scale(2,2);
+                -webkit-transform: translate(150%,150%) scale(2,2);
+                transform: translate(150%,150%) scale(2,2);
+            }
+
+            100% {
+                -ms-transform: translate(1,1) scale(1,1);
+                -webkit-transform: translate(1,1) scale(1,1);
+                transform: translate(1,1) scale(1,1);
+            }
+        }
+
+        @keyframes first_object {
+            0% {
+                -ms-transform: translate(1,1) scale(1,1);
+                -webkit-transform: translate(1,1) scale(1,1);
+                transform: translate(1,1) scale(1,1);
+            }
+
+            50% {
+                -ms-transform: translate(150%,150%) scale(2,2);
+                -webkit-transform: translate(150%,150%) scale(2,2);
+                transform: translate(150%,150%) scale(2,2);
+            }
+
+            100% {
+                -ms-transform: translate(1,1) scale(1,1);
+                -webkit-transform: translate(1,1) scale(1,1);
+                transform: translate(1,1) scale(1,1);
+            }
+        }
+
+        @-webkit-keyframes second_object {
+            0% {
+                -ms-transform: translate(1,1) scale(1,1);
+                -webkit-transform: translate(1,1) scale(1,1);
+                transform: translate(1,1) scale(1,1);
+            }
+
+            50% {
+                -ms-transform: translate(-150%,150%) scale(2,2);
+                -webkit-transform: translate(-150%,150%) scale(2,2);
+                transform: translate(-150%,150%) scale(2,2);
+            }
+
+            100% {
+                -ms-transform: translate(1,1) scale(1,1);
+                -webkit-transform: translate(1,1) scale(1,1);
+                transform: translate(1,1) scale(1,1);
+            }
+        }
+
+        @keyframes second_object {
+            0% {
+                -ms-transform: translate(1,1) scale(1,1);
+                -webkit-transform: translate(1,1) scale(1,1);
+                transform: translate(1,1) scale(1,1);
+            }
+
+            50% {
+                -ms-transform: translate(-150%,150%) scale(2,2);
+                -webkit-transform: translate(-150%,150%) scale(2,2);
+                transform: translate(-150%,150%) scale(2,2);
+            }
+
+            100% {
+                -ms-transform: translate(1,1) scale(1,1);
+                -webkit-transform: translate(1,1) scale(1,1);
+                transform: translate(1,1) scale(1,1);
+            }
+        }
+
+        @-webkit-keyframes third_object {
+            0% {
+                -ms-transform: translate(1,1) scale(1,1);
+                -webkit-transform: translate(1,1) scale(1,1);
+                transform: translate(1,1) scale(1,1);
+            }
+
+            50% {
+                -ms-transform: translate(-150%,-150%) scale(2,2);
+                -webkit-transform: translate(-150%,-150%) scale(2,2);
+                transform: translate(-150%,-150%) scale(2,2);
+            }
+
+            100% {
+                -ms-transform: translate(1,1) scale(1,1);
+                -webkit-transform: translate(1,1) scale(1,1);
+                transform: translate(1,1) scale(1,1);
+            }
+        }
+
+        @keyframes third_object {
+            0% {
+                -ms-transform: translate(1,1) scale(1,1);
+                -webkit-transform: translate(1,1) scale(1,1);
+                transform: translate(1,1) scale(1,1);
+            }
+
+            50% {
+                -ms-transform: translate(-150%,-150%) scale(2,2);
+                -webkit-transform: translate(-150%,-150%) scale(2,2);
+                transform: translate(-150%,-150%) scale(2,2);
+            }
+
+            100% {
+                -ms-transform: translate(1,1) scale(1,1);
+                -webkit-transform: translate(1,1) scale(1,1);
+                transform: translate(1,1) scale(1,1);
+            }
+        }
+
+        @-webkit-keyframes forth_object {
+            0% {
+                -ms-transform: translate(1,1) scale(1,1);
+                -webkit-transform: translate(1,1) scale(1,1);
+                transform: translate(1,1) scale(1,1);
+            }
+
+            50% {
+                -ms-transform: translate(150%,-150%) scale(2,2);
+                -webkit-transform: translate(150%,-150%) scale(2,2);
+                transform: translate(150%,-150%) scale(2,2);
+            }
+
+            100% {
+                -ms-transform: translate(1,1) scale(1,1);
+                -webkit-transform: translate(1,1) scale(1,1);
+                transform: translate(1,1) scale(1,1);
+            }
+        }
+
+        @keyframes forth_object {
+            0% {
+                -ms-transform: translate(1,1) scale(1,1);
+                -webkit-transform: translate(1,1) scale(1,1);
+                transform: translate(1,1) scale(1,1);
+            }
+
+            50% {
+                -ms-transform: translate(150%,-150%) scale(2,2);
+                -webkit-transform: translate(150%,-150%) scale(2,2);
+                transform: translate(150%,-150%) scale(2,2);
+            }
+
+            100% {
+                -ms-transform: translate(1,1) scale(1,1);
+                -webkit-transform: translate(1,1) scale(1,1);
+                transform: translate(1,1) scale(1,1);
+            }
+        }
+    </style>
+</head>
+<body onload="load()" class="templatemo-bg-gray">
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="first_object"></div>
+                <div class="object" id="second_object"></div>
+                <div class="object" id="third_object"></div>
+                <div class="object" id="forth_object"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function load() {
+            var loading = document.getElementById('loading');
+            //设置透明度改变的过渡时间为0.3秒
+            var a = setTimeout("loading.style.transition='opacity 0.3s'", 0)
+            //0.5秒后加载动画开始变为透明
+            var b = setTimeout("loading.style.opacity=0", 500)
+            //当透明度为0的时候，隐藏掉它
+            var c = setTimeout("loading.style.display='none'", 800)
+        }
+
+
+        function showMask() {
+            $("#mask").css({ "height": "200%", "width": "100%" });
+            $("#mask").show();
+            $("#alert").show();
+            var mailnum = document.getElementById("mailnum").value;
+            var realname = document.getElementById("realname").value;
+            var phonenum = document.getElementById("phonenum").value;
+            var username = document.getElementById("username").value;
+            var engname = document.getElementById("engname").value;
+            var sex = document.getElementById("sex").value;
+            var grade = document.getElementById("grade").value;
+            var classnum = document.getElementById("classnum").value;
+            var bornyear = document.getElementById("bornyear").value;
+            var bornmonth = document.getElementById("bornmonth").value;
+            var bornday = document.getElementById("bornday").value;
+            var password = document.getElementById("password").value;
+            var miyao = document.getElementById("miyao").value;
+            if (mailnum == "" || realname == "" || phonenum == "" || username == "" || engname == "" || sex == "" || grade == "" || classnum == "" || bornyear == "" || bornmonth == "" || bornday == "" || password.length <= 5 || miyao == "" ) {
+                alert("提交失败：关键信息不能为空或密码长度不足6位");
+                hideMask();
+
+            } else {
+                document: formcheck.submit()
+            }
+        }
+
+        function hideMask() {
+            $("#mask").hide();
+            $("#alert").hide();
+        }
+
+    </script>
+
+
+
+
+    <h1 class="margin-bottom-15">创建01学号账户</h1>
+
+    <div class="container">
+        <div class="col-md-12">
+            <form class="form-horizontal templatemo-create-account templatemo-container" id="formcheck" role="form" action="process/register.php" method="post">
+                <div class="form-inner">
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <label for="first_name" class="control-label">真实姓名</label>
+                            <input type="text" class="form-control" id="realname" name="realname" placeholder="输入虚假信息可能导致你无法匹配成绩" />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="last_name" class="control-label">微信号</label>
+                            <input type="text" class="form-control" id="phonenum" name="phonenum" placeholder="助教会添加你" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label for="mailnum" class="control-label">邮箱</label>
+                            <input type="email" class="form-control" id="mailnum" name="mailnum" placeholder="请确认准确，邮箱将作为你登录的凭证" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <label for="username" class="control-label">用户名</label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="彰显你的个性" />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="username" class="control-label">英文名</label>
+                            <input type="text" class="form-control" id="engname" name="engname" placeholder="真实英文名，首字母大写" />
+                        </div>
+
+                        
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-2">
+                            <label for="grade" class="control-label">性别</label>
+                            <select class="form-control" id="sex" name="sex" placeholder="" required >
+                                <option value="" style="display:none;">选择</option>
+                                <option value="male">男</option>
+                                <option value="female">女</option>
+                            </select>
+                            
+                        </div>
+                        <div class="col-md-2">
+                            <label for="miyao" class="control-label">年级</label>
+                            <input type="text" class="form-control" id="grade" name="grade" placeholder="例12" />
+                        </div>
+                        <div class="col-md-2">
+                            <label for="miyao" class="control-label">班级</label>
+                            <input type="text" class="form-control" id="classnum" name="classnum" placeholder="例01" />
+                        </div>
+                        <div class="col-md-2">
+                            <label for="miyao" class="control-label">出生年</label>
+                            <input type="text" class="form-control" id="bornyear" name="bornyear" placeholder="例2002" />
+                        </div>
+                        <div class="col-md-2">
+                            <label for="miyao" class="control-label">出生月</label>
+                            <input type="text" class="form-control" id="bornmonth" name="bornmonth" placeholder="例06" />
+                        </div>
+                        <div class="col-md-2">
+                            <label for="miyao" class="control-label">出生日</label>
+                            <input type="text" class="form-control" id="bornday" name="bornday" placeholder="例01" />
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <label for="password" class="control-label">密码</label>
+                            <input type="password" class="form-control" required id="password" name="password" placeholder="建议你设置一个复杂度较高的密码" />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="miyao" class="control-label">神奇秘钥(用于一键找回密码)</label>
+                            <input type="text" class="form-control" required id="miyao" name="miyao" placeholder="输入你最熟悉的人或物，确保你一定会记得" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <label><input type="checkbox" checked="checked" disabled />我确认以上所填的信息真实准确无误，并且我愿意承担一切因填写错误信息带来的后果,否则我不能注册01学号账户。我同意01服务使用守则和<a href="https://cloudsking.com/privacy.html">01隐私协议</a></label>
+
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <a href="javascript:;" data-toggle="modal" class="btn btn-success" data-target="#templatemo_modal" style="text-align:center;">确认信息</a>
+                            <div id="alert" style="display:none; text-align:center; "><span class="ld ld-ring ld-spin" style="font-size:300%;"></span>  Processing...<br />若等待时间过长，建议你刷新页面重新填写</div>
+                            <a href="index.html" class="pull-right">返回导航</a>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Modal -->
+
+    <div class="modal fade" id="templatemo_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">提交确认</h4>
+                </div>
+                <div class="modal-body">
+                    <p>我确认我所填写的信息真实有效，且确认同意01服务使用协议及01隐私协议。并且我知晓老师的批改结果正确与否与01考试中心无关，01考试中心仅提供技术支持。信息提交后不可以进行任何修改，若审核过程中发现信息错误，我的申请将会被驳回，需要重新提交注册申请。<br />在提交成功后的7个工作日内，系统会为你生成专属于您的01学号，在考试时需要你填写在试卷上！</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-info" onclick="showMask();" data-dismiss="modal">提交信息</button>
+
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <div id="mask"></div>
+
+</body>
+</html>
