@@ -15,9 +15,9 @@ $doc->strictErrorChecking = false;
 $doc->recover = true;
 $wordname = $_REQUEST["wordname"];
 $username = $_COOKIE["username"];
-$behave ='查词';
+$behave ='Find your Word';
 $ip=$_SERVER['REMOTE_ADDR'];
-$method='网页版';
+$method='Webpage Version';
 
 $doc->loadHTMLFile('http://www.youdao.com/w/eng/'.$wordname );
 
@@ -28,7 +28,7 @@ $query = "//*[@id='phrsListTab']/div/ul/li";
 $entries = $xpath->query($query);
 $haha = $entries->item(0)->textContent;
 if($haha == "" || $wordname ==""){
-	$haha = "输入的单词不存在，请检查后重试吧";
+	$haha = "The word doesn't exist, please check the word and come back later.";//输入的单词不存在，请检查后重试吧
 	$_SESSION["haha"]=$haha;
 	$_SESSION["wordname"]=$wordname;
 	?>
@@ -47,7 +47,7 @@ window.location.href="resultvocab.php";
         mysql_query("set names 'utf8'");
 
         if (!$con) {  
-            die('数据库连接失败'.$mysql_error());  
+            die('Fail to connect the database'.$mysql_error());  //数据库连接失败
         }  
         mysql_select_db("xdm447914479_db",$con);  
 			mysql_query("set names 'utf8'");
@@ -60,7 +60,7 @@ window.location.href="resultvocab.php";
 		if(isset($dbwordname)){
 		mysql_query("update 6boxesvocab set checking=checking+1 where word ='{$wordname}'");
 		}else{
-mysql_query("insert into 6boxesvocab(word,def) values('{$wordname}','{$haha}')") or die("后台记录存入失败1".mysql_error()) ; 
+mysql_query("insert into 6boxesvocab(word,def) values('{$wordname}','{$haha}')") or die("Fail to save in the background1".mysql_error()) ; //后台记录存入失败1
 
 		}//判定大词库①
 
@@ -74,7 +74,8 @@ mysql_query("insert into 6boxesvocab(word,def) values('{$wordname}','{$haha}')")
 		if(isset($dbwordname2)){
 		mysql_query("update 6boxespersonal set checking=checking+1 where word ='{$wordname}' and username='{$username}'");
 		}else{
-		mysql_query("insert into 6boxespersonal(word,def,username) values('{$wordname}','{$haha}','{$username}')") or die("后台记录存入失败2".mysql_error()) ; 
+		mysql_query("insert into 6boxespersonal(word,def,username) values('{$wordname}','{$haha}','{$username}')") or die("Fail to save in the background2".mysql_error()) ; //后台记录存入失败2
+		
 
 		}
 
