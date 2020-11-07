@@ -2,7 +2,7 @@
 <html>  
 <head>  
 <meta charset="utf-8">  
-    <title>处理中Processing...</title>  
+    <title>Processing...</title>  
 </head>  
 <body>  
     <?php   
@@ -18,13 +18,13 @@
 	
 		$ip=$_SERVER['REMOTE_ADDR'];
 
-		$behave="六个账号注册";
+		$behave="Sign up for ILLL";
   
         $con=mysql_connect("xdm447914479.my3w.com","xdm447914479","19891214");  
         mysql_query("set names 'utf8'");
 
         if (!$con) {  
-            die('数据库连接失败'.$mysql_error());  
+            die('Fail to connect ILLL database'.$mysql_error());  
         }  
         mysql_select_db("xdm447914479_db",$con);  
         $dbmailnum=null;  
@@ -36,14 +36,14 @@
         if(!is_null($dbmailnum)){  
     ?>  
     <script type="text/javascript">  
-        alert("身份下存在账号，请尝试直接登录或找回学号");  
+        alert("The identification has an account, please try to log in directly or find your student number back.");  
         window.location.href="mobile";  
     </script>   
     <?php   
         }  
 		mysql_query("set names 'utf8'");
         mysql_query("insert into 6boxesuser (job,phonenum,mailnum,plan,englishname,bornyear,password) values('{$job}','{$phonenum}','{$mailnum}','{$plan}','{$engname}','{$bornyear}','{$password}')") or die("Wrong connection".mysql_error()) ;  
-        mysql_query("insert into 6boxeslog (word,englishname,behave,ip) values({$mailnum}','{$engname}','{$behave}','{$ip}')") or die("后台记录存入失败".mysql_error()) ;  
+        mysql_query("insert into 6boxeslog (word,englishname,behave,ip) values({$mailnum}','{$engname}','{$behave}','{$ip}')") or die("Fail to connect the ILLL database".mysql_error()) ;  
 
 
 
