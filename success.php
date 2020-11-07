@@ -315,7 +315,7 @@
 				<br><br>
                     </div>
 					 <div class="col-md-12">
-                        <label for="mailnum" class="control-label fa-label"><i class="fa fa-user fa-medium"> 学号</i></label>
+                        <label for="mailnum" class="control-label fa-label"><i class="fa fa-user fa-medium"> Student Number</i></label>
                         <input type="text" class="form-control" name="fromerengname" placeholder="System will get the information automatically" readonly value="<?php echo "$username";
                 ?>" autocomplete="off">
 				<br><br>
