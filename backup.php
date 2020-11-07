@@ -43,10 +43,10 @@ $query = "//*[@id='phrsListTab']/div/ul/li";
 $entries = $xpath->query($query);
 $haha = $entries->item(0)->textContent;
 if($haha == ""){
-	$haha = "输入的单词不存在，请检查后重试吧";
+	$haha = "The word you typed does not exsist. Please try again.";
 	}
 	if($wordname == ""){
-	$haha = "输入的单词为空";
+	$haha = "You have an empty entry.";
 	}
 	
 	?>
