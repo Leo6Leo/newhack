@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 	<head>
-	<title>01 Studio</title>
+	<title>Newhack</title>
 	<meta charset="UTF-8">
 	
 	<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css"><!--包含图标库-->
@@ -102,7 +102,7 @@ var TableInit = function () {
 				pagination: true,
 				pageSize: 20,
 				pageNumber:1,
-				pageList: [10, 20, 50, 100, 200, 500],
+				pageList: ['ALL'],
 				search: true,
 				showColumns: true,
 				showRefresh: true,
