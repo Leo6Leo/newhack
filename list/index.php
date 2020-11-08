@@ -33,7 +33,7 @@ if (!isset ( $_COOKIE ["username"] )) {//判断code存不存在，如果不存�
     <div id="reportTableDiv" class="span10" style="width:100%; text-align:center">
       
 	  <div class="alert alert-success"><h1>My vocab list</h1>
-        <h2>My Word List</h2></div>
+        </div>
         <div class="alert alert-warning"><h4>You could choose export .xlsx file，and import it into Quizlet.com, help you learn effectively.</h4>
 		 <h4>Please use PC log into to http://cloudsking.com/vocabularytest to export vocabulary</h4>
 		 <a href="../vocab.html">Go Back to Navibar</a><br>
