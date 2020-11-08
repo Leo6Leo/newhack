@@ -155,7 +155,7 @@ var ButtonInit = function () {
     return oInit;
 };
 </script>
-    <h5 style="text-align:center">2019-2020© Leo</h5>
+    <h5 style="text-align:center">2020© Leo © For Newhack</h5>
 </body>
 
 </html>
