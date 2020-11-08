@@ -11,7 +11,7 @@
 + The I-triple-L which stands for **Interface for Learners and Lovers of Languages** is an integrated user interface that incorporates the functionalities of a dictionary and a vocabulary list. The dictionary can help users to translate English words directly into Chinese, as well as record every word the user has searched. The number of times the user searched for each word will also be recorded, which can help the user to identify which words show up more frequently than others. In addition, there will be a final list of all words collected by the system which can help the app developers and instructors to see how many times each word was searched. Users can also export the list as an excel file and import it into the very famous platform Quizlet.com to build the study set to better help in learning.
 
 # Demo 
-+ http://cloudsking.com/newhack
++ https://cloudsking.com/newhack
 
 ## Inspiration
 + The newly developed technologies in the last number of years have offered new alternatives to the way we live our everyday lives. The field of education is in no way an exception. when we recall the way that we learn the language, we realize that we can't find an appropriate way to better achieve our tasks on remembering words. 
