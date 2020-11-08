@@ -23,6 +23,7 @@
     <link href="css/templatemo_style.css" rel="stylesheet" type="text/css" />
     <link href="css/loading.css" rel="stylesheet" type="text/css" />
     <script src="../jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <style>
 
       
