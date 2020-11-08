@@ -100,7 +100,7 @@ var TableInit = function () {
 				height: 400,
 				striped: true,
 				pagination: true,
-				pageSize: 9999,
+				pageSize: 99999,
 				pageNumber:1,
 				pageList: [10,50,100,150,200,300,400,500],
 				search: true,
