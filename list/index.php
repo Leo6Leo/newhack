@@ -102,7 +102,7 @@ var TableInit = function () {
 				pagination: true,
 				pageSize: 999,
 				pageNumber:1,
-				pageList: [999,9999,99999],
+				pageList: [999,9999],
 				search: true,
 				showColumns: true,
 				showRefresh: true,
